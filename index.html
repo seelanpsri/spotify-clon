@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify clon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-portion">
+            <div class="left">
+                <div class="nav">
+                    <p class="home"><ion-icon class=home-icon name="home-outline"></ion-icon><b>Home</b></p>
+                    <p class="search"><ion-icon name="search-outline"></ion-icon>search</p>
+                </div>
+                <div class="library">
+                    <div class="library-head">
+                        <div class="first">
+                            <div class="first-left">
+                                <p class="icon-lib"><ion-icon name="library-outline"></ion-icon></p>
+                                <p class="library">Your Library</p>
+                            </div>
+                            <div class="first-right">
+                                <button class="icon-add-lib">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                                <button class="icon-grid-view"><ion-icon name="grid-outline"></ion-icon></button>
+                                <button class="icon-aero"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="second-right">
+                                <h1 class="playlist">Playlist</h1>
+                                <h1 class="artists">Artists</h1>
+                            </div>
+                            <div class="second-left">
+                                <p class="icon-search"><ion-icon name="search-outline"></ion-icon></p>
+                                <p class="recent">Recents</p>
+                            </div>
+                        </div>
+                        <div class="playlist liked">
+                            <img src="images/heart.png" alt="">
+                            <div class="about">
+                                <h1 class="name-artist">Liked Songs</h1>
+                                <p class="artist"><ion-icon name="eyedrop-outline"></ion-icon>Playlist .1 song</p>
+                            </div>
+                        </div>
+                        <div class="playlist">
+                            <img src="images/pradeep kumar.jpeg" alt="">
+                            <div class="about">
+                                <h1 class="name-artist">Pradeep Kumar</h1>
+                                <p class="artist">Artist</p>
+                            </div>
+                        </div>
+                        <div class="playlist">
+                            <img src="images/ARRahman.avif" alt="">
+                            <div class="about">
+                                <h1 class="name-artist">A.R.Rahman</h1>
+                                <p class="artist">Artist</p>
+                            </div>
+                        </div>
+                        <div class="playlist">
+                            <img src="images/ani.jpeg" alt="">
+                            <div class="about">
+                                <h1 class="name-artist">Anirudhn Ravichander</h1>
+                                <p class="artist">Artist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="play-pause">
+                    <div class="tri">
+                            <button class="icon-backwardd">
+                                <ion-icon name="play-back-outline"></ion-icon>
+                            </button>
+                            <button class="play">
+                                <ion-icon name="play-circle-outline"></ion-icon>
+                            </button>
+                            <button class="icon-forward">
+                                <ion-icon name="play-forward-outline"></ion-icon>
+                            </button>
+                    </div>
+                    <div class="length">
+                             <p class="time-on">0.03</p>
+                             <input type="range" min="0" max="90" value="10">
+                             <p class="total-time">2:20:12</p>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="top-head">
+                <div class="areos">
+                        <p class="left aero"><ion-icon name="caret-back-outline"></ion-icon></p>
+                        <p class="right aero"><ion-icon name="caret-forward-outline"></ion-icon></p>
+                </div>
+                <div class="member-ship">
+                        <h1 class="explorep">Explore premium</h1>
+                        <h1 class="installA"><ion-icon name="download-outline"></ion-icon>Install app</h1>
+                        <img src="images/bell.png" alt="" class="bell">
+                        <img src="images/anna.png" alt="" class="profile">
+                </div>
+                </div>
+                <div class="all-playlist">
+                    <div class="playlist1">
+                        <h1 class="good">Good afternoon</h1>
+                        <div class="fav">
+                            <div class="favlist">
+                                <img src="images/pradeep kumar12.jpeg" alt="">
+                                <p class="namelist">Pradeep Kumar Drugs !🩵</p>
+                                <button class="play" id="play-1"><ion-icon  class="play" id="1" name="play-outline"></ion-icon></button>
+                            </div>
+                            <div class="favlist">
+                                <img src="images/sleepy piano.jpeg" alt="">
+                                <p class="namelist">Sleepy Piano</p>
+                                <button class="play" id="2"><ion-icon class="play" id="2" name="play-outline"></ion-icon></button>
+                            </div>
+                    
+                            <div class="favlist">
+                                <img src="images/aniroudh mellody.jpg" alt="">
+                                <p class="namelist">Anirudh Melody songs</p>
+                                <button class="play" id="3"><ion-icon class="play" id="3" name="play-outline"></ion-icon></button>
+                            </div>
+                    
+                            <div class="favlist">
+                                <img src="images/john jebaraj spotify.jpeg" alt="">
+                                <p class="namelist">John Jebaraj</p>
+                                <button class="play" id="4"><ion-icon class="play" id="4" name="play-outline"></ion-icon></button>
+                            </div>
+                    
+                            <div class="favlist">
+                                <img src="images/Schumy-Vanna-Kaviyangal-odcast-20230413134738-500x500.jpg" alt="">
+                                <p class="namelist">Schumy Vanna </p>
+                                <button class="play" id="5"><ion-icon class="play" id="5" name="play-outline"></ion-icon></button>
+                            </div>
+                    
+                            <div class="favlist">
+                                <img src="images/saivam.jpeg" alt="">
+                                <p class="namelist">saivam</p>
+                                <button class="play" id="6"><ion-icon class="play" id="6" name="play-outline"></ion-icon></button>
+                            </div>
+                    
+                    
+
+                        </div>
+                    </div>
+                    <div class="playlist2">
+                        <div class="heading">
+                            <h1 class="row-title">More like pradeepkumar drugs! 🩵</h1>
+                            <p class="showall">Show all</p>
+                        </div>
+                        
+                        <div class="nfav">
+                        <div class="pcon">
+                                <img src="images/sad melodiess tamil.jpeg" alt="">
+                                <div class="about">
+                                    <h1 class="nplay-name">Sad Melodies...</h1>
+                                    <p class="nplay-about">take a Breath and Console your Hea...</p>
+                                </div>
+                                <button class="play" id="7"><ion-icon class="play" id="7" name="play-outline"></ion-icon></button>
+
+                        </div>
+                            <div class="pcon">
+                                <img src="images/romatic aco.jpeg" alt="">
+                                <div class="about">
+                                    <h1 class="nplay-name">Romantic Ac...</h1>
+                                    <p class="nplay-about">Soul stirring unplugged...</p>
+                                </div>
+                                <button class="play" id="8"><ion-icon  class="play" id="8" name="play-outline"></ion-icon></button>
+
+                        </div>
+                            <div class="pcon">
+                                <img src="images/mazhai feel.jpeg" alt="">
+                                <div class="about">
+                                    <h1 class="nplay-name">Mazhai Feels...</h1>
+                                    <p class="nplay-about">Unwind the various 'feels' of Rain</p>
+                                </div>
+                                <button class="play" id="9"><ion-icon class="play" id="9" name="play-outline"></ion-icon></button>
+
+                        </div>
+                            <div class="pcon">
+                                <img src="images/sensational.jpeg" alt="">
+                                <div class="about">
+                                    <h1 class="nplay-name">Sensational Sid S...</h1>
+                                    <p class="nplay-about">Enjoy thye Magical voice of Sid</p>
+                                </div>
+                                <button class="play" id="10"><ion-icon class="play" id="10" name="play-outline"></ion-icon></button>
+
+                        </div>
+                            <div class="pcon">
+                                <img src="images/gramathu kathal.jpeg" alt="">
+                                <div class="about">
+                                    <h1 class="nplay-name">Gramathu Kathal</h1>
+                                    <p class="nplay-about">Kaadhal-Namma ooru Style</p>
+                                </div>
+                                <button class="play" id="11"><ion-icon class="play" id="11" name="play-outline"></ion-icon></button>
+
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <div class="playlist2">
+                        <div class="heading">
+                            <h1 class="row-title">Made for seelan</h1>
+                            <p class="showall">Show all</p>
+                        </div>
+                        
+                        <div class="nfav">
+                        <div class="pcon">
+                                <img src="images/release radar.jpeg" alt="">
+                                <div class="about">
+                                    <h1 class="nplay-name">Release Radar</h1>
+                                    <p class="nplay-about">Catch all the latest music from artist for you...</p>
+                                </div>
+                                <button class="play" id="9"><ion-icon name="play-outline"></ion-icon></button>
+
+                        </div>
+                            <div class="pcon">
+                                <img src="images/daily mix.jpeg " alt="">
+                                <div class="about">
+                                    <h1 class="nplay-name">Daily Mix 1</h1>
+                                    <p class="nplay-about">Soul stirring unplugged...</p>
+                                </div>
+                                <button class="play" id="1"><ion-icon name="play-outline"></ion-icon></button>
+
+                        </div>
+                            <div class="pcon">
+                                <img src="images/daily mix 2.jpeg" alt="">
+                                <div class="about">
+                                    <h1 class="nplay-name">Daily Mix 2</h1>
+                                    <p class="nplay-about">Unwind the various 'feels' of Rain</p>
+                                </div>
+                                <button class="play" id="6"><ion-icon name="play-outline"></ion-icon></button>
+
+                        </div>
+                            <div class="pcon">
+                                <img src="images/daily mix3.jpeg" alt="">
+                                <div class="about">
+                                    <h1 class="nplay-name">Daily Mix 3</h1>
+                                    <p class="nplay-about">Enjoy thye Magical voice of Sid</p>
+                                </div>
+                                <button class="play" id="7"><ion-icon name="play-outline"></ion-icon></button>
+
+                        </div>
+                            <div class="pcon">
+                                <img src="images/daily mix4.jpeg" alt="">
+                                <div class="about">
+                                    <h1 class="nplay-name">Dailyy Mix 4</h1>
+                                    <p class="nplay-about">Kaadhal-Namma ooru Style</p>
+                                </div>
+                                <button class="play" id="3"><ion-icon name="play-outline"></ion-icon></button>
+
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <div class="playlist2">
+                        <div class="heading">
+                            <h1 class="row-title">Recently Played</h1>
+                            <p class="showall">Show all</p>
+                        </div>
+                        
+                        <div class="nfav">
+                        <div class="pcon">
+                                <img src="images/Schumy-Vanna-Kaviyangal-odcast-20230413134738-500x500.jpg" alt="">
+                                <div class="about">
+                                    <h1 class="nplay-name">Schumy vanna Kaviyangal</h1>
+                                    <p class="nplay-about">take a Breath and Console your Hea...</p>
+                                </div>
+                                <button class="play" id="5"><ion-icon name="play-outline"></ion-icon></button>
+
+                        </div>
+                            <div class="pcon">
+                                <img src="images/pradeep kumar.jpeg" alt="">
+                                <div class="about">
+                                    <h1 class="nplay-name">Pradeep Kumar Melody</h1>
+                                    <p class="nplay-about">Soul stirring unplugged...</p>
+                                </div>
+                                <button class="play" id="1"><ion-icon name="play-outline"></ion-icon></button>
+
+                        </div>
+                            <div class="pcon">
+                                <img src="images/sleepy piano.jpeg" alt="">
+                                <div class="about">
+                                    <h1 class="nplay-name">sleepy Piano...</h1>
+                                    <p class="nplay-about">Unwind the various 'feels' of Rain</p>
+                                </div>
+                                <button class="play" id="2"><ion-icon name="play-outline"></ion-icon></button>
+
+                        </div>
+                            <div class="pcon">
+                                <img src="images/john jebaraj spotify.jpeg" alt="">
+                                <div class="about">
+                                    <h1 class="nplay-name">John Jebaraj</h1>
+                                    <p class="nplay-about">Artist</p>
+                                </div>
+                                <button class="play" id="4"><ion-icon name="play-outline"></ion-icon></button>
+
+                        </div>
+                            <div class="pcon">
+                                <img src="images/aniroudh mellody.jpg" alt="">
+                                <div class="about">
+                                    <h1 class="nplay-name">Melodies From Ani..</h1>
+                                    <p class="nplay-about">Kaadhal-Namma ooru Style</p>
+                                </div>
+                                <button class="play" id="3"><ion-icon name="play-outline"></ion-icon></button>
+
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <div class="last">
+                   
+                            <h1 class="title">Uniquly Yours</h1>
+                        <div class="inner">
+                            <div class="p">
+                                 <img src="images/on repeat.jpg" alt="">
+                                 <div class="conent">
+                                     <h1 class="content-head">On Repeat</h1>
+                                     <p class="content-inner">Songs you love right now</p>
+                                 </div>
+                                 <button class="play" id="4"><ion-icon name="play-outline"></ion-icon></button>
+                            </div>
+                            <div class="p">
+                                <img src="images/time capsule.jpg" alt="">
+                                <div class="conent">
+                                    <h1 class="content-head">Your Time Capsule</h1>
+                                    <p class="content-inner">We made you a personalized playlist</p>
+                                </div>
+                                <button class="play" id="11"><ion-icon name="play-outline"></ion-icon></button>
+
+                            </div>
+                            <div class="p">
+                                <img src="images/repeat rewind.jpg" alt="">
+                                <div class="conent">
+                                    <h1 class="content-head">Repeat Rewind</h1>
+                                    <p class="content-inner">youur past favorits</p>
+                                </div>
+                                <button class="play" id="6"><ion-icon name="play-outline"></ion-icon></button>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="description">
+                        <div class="path">
+                            <div class="p">
+                                <h1>Company</h1>
+                                <p>About</p>
+                                <p>Jobs</p>
+                                <p>For the Record</p>
+                            </div>
+                            <div class="p">
+                                <h1>Communnuties</h1>
+                                <p>For Artists</p>
+                                <p>Developers</p>
+                                <p>Advertising</p>
+                                <p>Investors</p>
+                                <p>Vendors</p>
+                            </div>
+                            <div class="p">
+                                <h1>Useful links</h1>
+                                <p>Support</p>
+                                <p>Free Mobile App</p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <hr>
+                    <div class="end-end">
+                        <div class="con">
+                            <p>Legal</p>
+                            <p>Privacy Center</p>
+                            <p>Privacy Policy</p>
+                            <p>Cookies</p>
+                            <p>About Ads</p>
+                            <p> Accesssibility</p>
+                        </div>
+                        <p class="copyright">©️2023 Spotify AB</p>
+                       
+                    </div>
+                   
+                    </div>
+                </div>
+            
+        </div>
+       
+
+    </div>    
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
